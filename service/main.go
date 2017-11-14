@@ -19,21 +19,19 @@ type Location struct {
 
 type Post struct {
 	// `json:"user"` is for the json parsing of this User field. Otherwise, by default it's 'User'.
-	User     string `json:"user"` //User:1111
+	User     string `json:"user"`
 	Message  string  `json:"message"`
 	Location Location `json:"location"`
-}
-
-type Test struct {
-	User string
 }
 
 func main() {
 	fmt.Println("started-service")
 	http.HandleFunc("/post", handlerPost)
 	http.HandleFunc("/search", handlerSearch)
+
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
+
 
 func handlerPost(w http.ResponseWriter, r *http.Request) {
 	// Parse from body of request to get a json object.
@@ -49,14 +47,16 @@ func handlerPost(w http.ResponseWriter, r *http.Request) {
 }
 
 func handlerSearch(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Received one search request")
-	lat,_ := strconv.ParseFloat(r.URL.Query().Get("lat"), 64)
-	lon,_ := strconv.ParseFloat(r.URL.Query().Get("lon"), 64)
+	fmt.Println("Received one request for search")
+	lat, _ := strconv.ParseFloat(r.URL.Query().Get("lat"), 64)
+	lon, _ := strconv.ParseFloat(r.URL.Query().Get("lon"), 64)
+	// range is optional
 	ran := DISTANCE
 	if val := r.URL.Query().Get("range"); val != "" {
-		ran = val + "km";
+		ran = val + "km"
 	}
-	fmt.Fprintf(w, "Search received: Lat : %f, Lon : %f, range : %s", lat, lon, ran);
+
+	fmt.Fprintf(w, "Search received: %f %f %s", lat, lon, ran)
 
 	// Return a fake post
 	p := &Post{
