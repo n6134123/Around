@@ -23,23 +23,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1472">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="-893">
+              <caret line="88" column="24" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
               <folding>
-                <element signature="e#14#155#0" expanded="true" />
+                <element signature="e#14#166#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hwTest.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hwTest.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hwTest.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+            <state relative-caret-position="255">
+              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding>
                 <element signature="e#14#31#0" expanded="true" />
               </folding>
@@ -60,6 +60,8 @@
     <findStrings>
       <find>reques</find>
       <find>range</find>
+      <find>typeof</find>
+      <find>creatin</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -75,13 +77,13 @@
       <list>
         <option value="$PROJECT_DIR$/.idea/HwTest.go" />
         <option value="$PROJECT_DIR$/HwTest.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/hwTest.go" />
+        <option value="$PROJECT_DIR$/main.go" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="19" />
+    <option name="x" value="-6" />
     <option name="y" value="23" />
     <option name="width" value="1260" />
     <option name="height" value="712" />
@@ -118,6 +120,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Go 1.9.2 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Go 1.9.2 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reflect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -145,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Single File.go run hwTest.go">
+  <component name="RunManager" selected="Go Single File.go run main.go">
     <configuration default="false" name="go run main.go" type="GoRunFileConfiguration" factoryName="Go Single File" temporary="true">
       <module name="service" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -388,8 +440,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run hwTest.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run main.go" />
+        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run main.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run hwTest.go" />
       </list>
     </recent_temporary>
   </component>
@@ -416,8 +468,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="23" width="1260" height="712" extended-state="0" />
-    <editor active="true" />
+    <frame x="-6" y="23" width="1260" height="712" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -427,10 +479,10 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32741934" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23548387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.66935486" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39737275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -467,7 +519,7 @@
         <state relative-caret-position="345">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -487,7 +539,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -507,7 +559,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -525,7 +577,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -535,7 +587,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -545,7 +597,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -555,7 +607,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#155#0" expanded="true" />
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -584,22 +636,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
+    <entry file="file:///usr/local/go/src/reflect/type.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1472">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#14#155#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="208">
+          <caret line="1397" column="5" lean-forward="false" selection-start-line="1397" selection-start-column="5" selection-end-line="1397" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/builtin/builtin.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="133" column="42" lean-forward="true" selection-start-line="133" selection-start-column="42" selection-end-line="133" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/gopkg.in/olivere/elastic.v3/index.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="54" column="46" lean-forward="true" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/gopkg.in/olivere/elastic.v3/client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="1413" column="53" lean-forward="true" selection-start-line="1413" selection-start-column="53" selection-end-line="1413" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/gopkg.in/olivere/elastic.v3/search.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="133" column="38" lean-forward="false" selection-start-line="133" selection-start-column="38" selection-end-line="133" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/gopkg.in/olivere/elastic.v3/query.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/go/src/gopkg.in/olivere/elastic.v3/search_queries_geo_distance.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="54" column="64" lean-forward="true" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hwTest.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        <state relative-caret-position="255">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding>
             <element signature="e#14#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-893">
+          <caret line="88" column="24" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
+          <folding>
+            <element signature="e#14#166#0" expanded="true" />
           </folding>
         </state>
       </provider>

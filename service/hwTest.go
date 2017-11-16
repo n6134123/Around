@@ -7,6 +7,7 @@ import (
 type element struct {
 	x int
 	y int
+	User string
 }
 
 type Location struct {
@@ -20,13 +21,6 @@ type Post struct {
 	Message  string  `json:"message"`
 	Location Location `json:"location"`
 }
-
-func ThisIsTest(arr []int) {
-	arr[0] = 1
-	arr[1] = 2
-
-}
-
 
 func main() {
 	//Homework 1, given a map from string to bool, how to iterate over it and print out all the key-values?

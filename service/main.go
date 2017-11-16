@@ -9,6 +9,7 @@ import (
 	"log"
 	"strconv"
 	"reflect"
+	"strings"
 )
 
 const (
@@ -19,7 +20,7 @@ const (
 	//PROJECT_ID = "around-xxx"
 	//BT_INSTANCE = "around-post"
 	// Needs to update this URL if you deploy it to cloud.
-	ES_URL = "http://104.196.111.175:9200"
+	ES_URL = "http://35.190.149.190:9200"
 )
 
 type Location struct {
@@ -59,8 +60,8 @@ func main() {
                                   }
                            }
                     }
-             }
-             `
+             	}
+             	`
 		_, err := client.CreateIndex(INDEX).Body(mapping).Do()
 		if err != nil {
 			// Handle error
@@ -86,35 +87,29 @@ func handlerPost(w http.ResponseWriter, r *http.Request) {
 	id := uuid.New()
 	// Save to ES.
 	saveToES(&p, id)
-
 }
 
 // Save a post to ElasticSearch
 func saveToES(p *Post, id string) {
 	// Create a client
-	es_client, err := elastic.NewClient(elastic.SetURL(ES_URL), elastic.SetSniff(false))
+	client, err := elastic.NewClient(elastic.SetURL(ES_URL), elastic.SetSniff(false))
 	if err != nil {
 		panic(err)
 		return
 	}
 
-	// Save it to index
-	_, err = es_client.Index().
-		Index(INDEX).
-		Type(TYPE).
-		Id(id).
-		BodyJson(p).
-		Refresh(true).
-		Do()
+	_, err = client.Index().
+	Index(INDEX).
+	Type(TYPE).
+	Id(id).
+	BodyJson(p).
+	Refresh(true).
+	Do()
+
 	if err != nil {
 		panic(err)
-		return
 	}
-
-	fmt.Printf("Post is saved to Index: %s\n", p.Message)
 }
-
-
 
 func handlerSearch(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Received one request for search")
@@ -126,7 +121,7 @@ func handlerSearch(w http.ResponseWriter, r *http.Request) {
 		ran = val + "km"
 	}
 
-	fmt.Printf( "Search received: %f %f %s\n", lat, lon, ran)
+	fmt.Printf("Search received: %f %f %s\n", lat, lon, ran)
 
 	// Create a client
 	client, err := elastic.NewClient(elastic.SetURL(ES_URL), elastic.SetSniff(false))
@@ -162,12 +157,13 @@ func handlerSearch(w http.ResponseWriter, r *http.Request) {
 	// However, it ignores errors in serialization.
 	var typ Post
 	var ps []Post
-	for _, item := range searchResult.Each(reflect.TypeOf(typ)) { // instance of
+	for _, item := range searchResult.Each(reflect.TypeOf(typ)) {
+		// instance of
 		p := item.(Post) // p = (Post) item
 		fmt.Printf("Post by %s: %s at lat %v and lon %v\n", p.User, p.Message, p.Location.Lat, p.Location.Lon)
-		// TODO(student homework): Perform filtering based on keywords such as web spam etc.
-		ps = append(ps, p)
-
+		if !p.spamFilter(p.Message) {
+			ps = append(ps, p)
+		}
 	}
 	js, err := json.Marshal(ps)
 	if err != nil {
@@ -178,8 +174,19 @@ func handlerSearch(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Write(js)
+}
 
-
+func (p Post) spamFilter(msg string) bool {
+	m := map[string]bool {
+		"shit" : true,
+		"fuck" : true,
+	}
+	for k := range m {
+		if strings.Contains(msg, k) {
+			return true
+		}
+	}
+	return false
 }
 
 
